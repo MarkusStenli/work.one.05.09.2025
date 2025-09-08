@@ -48,7 +48,7 @@ public class Application {
             Scanner scanner = new Scanner(System.in);
         int min = scanner.nextInt(), max = scanner.nextInt();
         for (int i = min; i <= max; i++){
-            System.out.println("PRINT " + i);
+            System.out.println("PRINT: " + i);
         }
 
         }
