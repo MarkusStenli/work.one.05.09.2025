@@ -50,14 +50,14 @@ public class homework1 {
         int a = 3;
         int b = 1;
         int sum = a + b;
-        if (sum % a < b) {
+        if ( a < b ) {
             System.out.println(" a < b ");
         } else {
             System.out.println(" a > b ");
         }
     }
     public static void addOrSubtractAndPrint(int initValue, int delta, boolean increment) {
-        int sum = initValue + delta;
+        int difference = initValue - delta;
         if ( increment == false) {
             System.out.println( initValue + delta );
         } else {
