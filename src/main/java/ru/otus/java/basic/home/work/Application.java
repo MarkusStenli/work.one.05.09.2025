@@ -10,7 +10,8 @@ public class Application {
        two();
        three();
        four();
-        // five();
+       five();
+       six();
         }
 
         public static void one () {
@@ -21,15 +22,17 @@ public class Application {
 // первое задание (finish)
 
     public static void two (){
-        int[] arr = new int [5];
-        arr [2] = 10;
-        arr [4] = 5;
-        arr [3] = arr [2] + arr [4];
-        System.out.println(arr[3]);
-        //   System.out.println(Arrays.toString(arr));
+       int[] arr = {4, 6, 2, 5, 9};
+       int positiveCounter = 0;
+       for (int i = 0; i < arr.length; i++){
+           if (arr[i] >= 5){
+               positiveCounter ++;
+           }
+       }
+        System.out.println(" количество ячеек выше пяти по значению " + positiveCounter);
     }
 
-    // второе задание
+    // второе задание (готово)
 
     public static void three (){
        int [] arr = new int [10];
@@ -40,12 +43,6 @@ public class Application {
      }
 // третье задание (finish)
 
-//    public static void four () {
-//        int [] arr = {1, 2, 3, 2, 1};
-//int [] array = new int [6];
-//        System.out.println (Arrays.toString(arr));
-//     }
-
 public static void four (){
         int[] arr = new int [8];
         for (int i = 0; i < arr.length; i++){
@@ -55,6 +52,36 @@ public static void four (){
 }
 // четвертое задание (готово)
 
+    public static void five (){
+    int[] arr = new int[10];
+    for (int i = 0; i < arr.length / 2; i++){
+        arr[i] = 1;
+    }
+    for (int i = arr.length / 2; i < arr.length; i++){
+        arr[i] = 2;
+    }
+        System.out.println(Arrays.toString(arr));
+    }
+
+    public static void six (){
+        int [] arr = {1, 4, 5, 6, 7, 2, 2, 4, 2, 3};
+        sumAndPrint(arr);
+    }
+public static void sumAndPrint(int[] in ){
+        int sum = 0;
+        for (int i = 0; i < in.length/2; i++) {
+            sum += in[i];
+        }
+        int sum2 = 0;
+        for (int i = in.length / 2; i < in.length; i++){
+            sum2 += in[i];
+        }
+        if (sum > sum2){
+            System.out.println("левая часть массива больше ");
+        } else {
+            System.out.println("правая часть массива больше");
+        }
+}
 //       public static void two (){
 //            for (int i = 20; i <= 30; i++) {
 //                if (i % 2 == 0) {
