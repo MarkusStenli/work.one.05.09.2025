@@ -1,7 +1,6 @@
 package ru.otus.java.basic.home.work;
 
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class Application {
     public static void main(String[] args) {
@@ -19,7 +18,7 @@ public class Application {
              System.out.println("hello");
              }
         }
-// первое задание (finish)
+// первое задание
 
     public static void two (){
        int[] arr = {4, 6, 2, 5, 9};
@@ -32,7 +31,7 @@ public class Application {
         System.out.println(" количество ячеек выше пяти по значению " + positiveCounter);
     }
 
-    // второе задание (готово)
+    // второе задание
 
     public static void three (){
        int [] arr = new int [10];
@@ -41,7 +40,7 @@ public class Application {
        }
         System.out.println(Arrays.toString(arr));
      }
-// третье задание (finish)
+// третье задание
 
 public static void four (){
         int[] arr = new int [8];
@@ -50,7 +49,7 @@ public static void four (){
         }
             System.out.println(Arrays.toString(arr));
 }
-// четвертое задание (готово)
+// четвертое задание
 
     public static void five (){
     int[] arr = new int[10];
@@ -82,6 +81,8 @@ public static void sumAndPrint(int[] in ){
             System.out.println("правая часть массива больше");
         }
 }
+    //пятое задание
+
 //       public static void two (){
 //            for (int i = 20; i <= 30; i++) {
 //                if (i % 2 == 0) {
